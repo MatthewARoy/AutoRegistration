@@ -138,8 +138,7 @@ public class SignupInterface extends JFrame {
                 txtrInfoScreen.setText("Preparing to sign up " + netID + " with password "
                         + password + "\n At 24 hour time " + hour + ":" + minute + ":" +
                         second + "\n");
-               addInfoText("Logging onto aces at time " + hour + ":" + (minute-prep) + ":" +
-                        second + "\n");
+               addInfoText("Logging onto aces " + prep+ " minutes early. \n");
             }
         });
 
