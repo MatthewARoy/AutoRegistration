@@ -13,8 +13,7 @@ How to use it:
 
 1) Open the jar file
 
-2) Enter your netid and password into the marked boxes
-
+2) Enter your netid and password into the marked boxes. 
 (optional: enter the time you want to run the registration, and the prep time before. You don't need to mess with this)
 
 3) AFTER MIDNIGHT, press the "Run Registration" button (don't press it multiple times) and leave your computer running overnight.
