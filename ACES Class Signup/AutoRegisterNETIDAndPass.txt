@@ -1,0 +1,4 @@
+﻿-CHANGE THE TWO LINES BELOW TO YOUR NETID AND PASSWORD. The line that appears afterwards confirms it worked.
+netid
+password
+-After running the program a line should appear below this. This just shows the file was read correctly.

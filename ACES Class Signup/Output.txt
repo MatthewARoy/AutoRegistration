@@ -1,0 +1,461 @@
+mar59 and password of length 9
+7
+setup
+starting up
+Set registration for: Wed Nov 05 07:00:00 EST 2014
+Current page: ACES/STORM Login
+Current page: NetID Services
+HtmlTextInput[<input class="text" type="text" id="j_username" name="j_username" maxlength="16" autocorrect="off" autocapitalize="off">]
+hidden password
+Current page: 
+Current page: Duke Student Info Systems
+https://www.siss.duke.edu/psp/CSPRD01/EMPLOYEE/HRMS/h/?tab=DEFAULT
+Enroll cart: HtmlAnchor[<a name="DERIVED_SSS_SCL_SSS_ENRL_CART" id="DERIVED_SSS_SCL_SSS_ENRL_CART" ptlinktgt="pt_peoplecode" tabindex="135" href="javascript:submitAction_win1(document.win1,'DERIVED_SSS_SCL_SSS_ENRL_CART');" class="SSSHYPERLINKBOLDSMALL">]
+Current page: Enrollment Book Bag
+Waiting: 2
+Number of class blocks enrolled in: 0
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 1
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 2
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 3
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 4
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 5
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 6
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 7
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 8
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 9
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 10
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 11
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 12
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 13
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 14
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 15
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 16
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 17
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 18
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 19
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 20
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 21
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 22
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 23
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 24
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 25
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 26
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 27
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 28
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 29
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 30
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 31
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 32
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 33
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 34
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 35
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 36
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 37
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 38
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 39
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 40
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 41
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 42
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 43
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 44
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 45
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 46
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 47
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 48
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 49
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 50
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 51
+I am sounding the alarm! I tried 51 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 52
+I am sounding the alarm! I tried 52 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 53
+I am sounding the alarm! I tried 53 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 54
+I am sounding the alarm! I tried 54 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 55
+I am sounding the alarm! I tried 55 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 56
+I am sounding the alarm! I tried 56 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 57
+I am sounding the alarm! I tried 57 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 58
+I am sounding the alarm! I tried 58 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 59
+I am sounding the alarm! I tried 59 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 60
+I am sounding the alarm! I tried 60 times!
+Something went wrong! Yikes, sounding the alarm. 
+
+Current page: ACES/STORM Login
+Current page: NetID Services
+HtmlTextInput[<input class="text" type="text" id="j_username" name="j_username" maxlength="16" autocorrect="off" autocapitalize="off">]
+hidden password
+Current page: 
+Current page: Duke Student Info Systems
+https://www.siss.duke.edu/psp/CSPRD01/EMPLOYEE/HRMS/h/?tab=DEFAULT
+Enroll cart: HtmlAnchor[<a name="DERIVED_SSS_SCL_SSS_ENRL_CART" id="DERIVED_SSS_SCL_SSS_ENRL_CART" ptlinktgt="pt_peoplecode" tabindex="135" href="javascript:submitAction_win1(document.win1,'DERIVED_SSS_SCL_SSS_ENRL_CART');" class="SSSHYPERLINKBOLDSMALL">]
+Current page: Enrollment Book Bag
+Waiting: 2
+Number of class blocks enrolled in: 0
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 1
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 2
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 3
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 4
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 5
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 6
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
+Loading after click: 2
+Current page after click: Book Bag/Enroll in Classes
+You do not have a valid enrollment appointment at this time.
+Attempt: 7
+Trying to enroll.
+Current page before click: Book Bag/Enroll in Classes
