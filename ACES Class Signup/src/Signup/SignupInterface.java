@@ -79,7 +79,7 @@ public class SignupInterface extends JFrame {
      * Create the frame.
      */
     public SignupInterface () {
-        setTitle("AutoACES");
+        setTitle("AutoACES 2.0");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 450, 600);
         contentPane = new JPanel();
@@ -92,7 +92,6 @@ public class SignupInterface extends JFrame {
         panel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
 
         myReg = new Register();
-        myReg.collectLog();
         myReg.addGui(this);
 
         lblUsername = new JLabel("NetID");
@@ -120,6 +119,7 @@ public class SignupInterface extends JFrame {
 
                 String netID = txtSup.getText();
                 String password = txtReallycoolacespassword.getText();
+                myReg.collectLog("Output"+netID+".txt");
 
                 myReg.setUserAndPass(netID, password);
                 System.out.println(netID + " and password of length " + password.length());
@@ -135,8 +135,8 @@ public class SignupInterface extends JFrame {
                 // myAlarm = new Alarm(myReg,hour,minute-prep,second);
                 // myAlarm.secondaryAlarm(hour, minute, second);
 
-                txtrInfoScreen.setText("Preparing to sign up " + netID + " with password "
-                        + password + "\n At 24 hour time " + hour + ":" + minute + ":" +
+                txtrInfoScreen.setText("Preparing to sign up " + netID + " with password of length "
+                        + password.length() + "\n At 24 hour time " + hour + ":" + minute + ":" +
                         second + "\n");
                addInfoText("Logging onto aces " + prep+ " minutes early. \n");
             }

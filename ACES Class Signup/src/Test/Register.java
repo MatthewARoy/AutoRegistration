@@ -158,7 +158,7 @@ public class Register
             writer.close();
             iso.close();
             System.out.println(netid);
-            System.out.println(acesPass);
+            System.out.println("Password of length" + acesPass.length());
         }
         catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
@@ -190,7 +190,7 @@ public class Register
      * Print console to Output.txt for debugging purposes
      */
     public void collectLog() {
-        collectLog("Output.txt");
+        collectLog("Output" + netid + ".txt");
     }
     
     public void collectLog(String fileName) {
@@ -346,22 +346,22 @@ public class Register
      * After 25 failed attempts, it will play an alarm
      */    
     public void beginRegistration () {
-        int n = 0;
-        startTime = System.currentTimeMillis();
+        int n = 0;        
         while (!readyToRegister) {
             
         }        
         boolean gotToSignup = false;
-
+        startTime = System.currentTimeMillis();
         try {
             while (!gotToSignup) {
                 System.out.println("Trying to enroll.");
                 myGui.addInfoText("Trying to enroll. \n");
                 HtmlDivision pageTitle2 =
                         (HtmlDivision) page.getElementById("win1divDERIVED_REGFRM1_TITLE1");
-                System.out.println("Current page before click: " + pageTitle2.asText());
-                myGui.addInfoText("Current page while bookbagging: " + pageTitle2.asText() + " \n");
-
+                if (pageTitle2 != null) {
+                    System.out.println("Current page before click: " + pageTitle2.asText());
+                    myGui.addInfoText("Current page while bookbagging: " + pageTitle2.asText() + " \n");
+                }
                 // testing if the registration window is open yet
                 HtmlAnchor anchor3 =
                         (HtmlAnchor) page.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL");
@@ -416,26 +416,7 @@ public class Register
             
             String classNameLocation = "win1divR_CLASS_NAME$";
             
-            if (false) {
-                
-                int i = 0;
-                List<DomElement> myEnrolledClasses = new ArrayList<DomElement>();
-                while (!page.getElementsByIdAndOrName(classNameLocation + i).isEmpty()) {
-                    myEnrolledClasses.addAll(page.getElementsByIdAndOrName(classNameLocation + i));
-                    i++;
-                }
-                System.out.println("Number of class blocks enrolled in: " + i);
-                myGui.addInfoText("Number of class blocks enrolled in: " + i+ "\n");
-                for (DomElement e : myEnrolledClasses) {
-                    System.out.println(e.asText());
-                    myGui.addInfoText(e.asText() + "\n");
-                }
-
-                HtmlAnchor anchor4 = (HtmlAnchor) page.getElementById("DERIVED_REGFRM1_SSR_PB_SUBMIT");
-                page = anchor4.click();
-
-            }
-           
+            
             HtmlAnchor anchor5 =
                     (HtmlAnchor) page.getElementById("DERIVED_REGFRM1_SSR_LINK_STARTOVER");
             page = anchor5.click();
@@ -494,11 +475,25 @@ public class Register
     }
     
     private void ifRegistrationFails () {
+        ifRegistrationFails(1);
+    }
+    
+    private void ifRegistrationFails(int numberAlarms) {
         String error = "Something went wrong! Yikes, sounding the alarm.";
         System.out.println(error);
         myGui.addInfoText(error + "\n");
          Sound sound = new Sound("SIREN.wav");
-         sound.play();
+         for (int i = 0; i<numberAlarms; i++) {
+             sound.play();
+             try {
+                Thread.sleep(1000);
+            }
+            catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+         }
+         
     }
 
     private String netid = "";
