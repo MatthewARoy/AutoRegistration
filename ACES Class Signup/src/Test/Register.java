@@ -406,6 +406,7 @@ public class Register
                     Thread.sleep(1000);
                     if (n>soundAlarmAfter && n%10==0) {
                         Thread.sleep(10000);
+                        myGui.addInfoText("Restarting entire process and logging into ACES again. \n");
                         soundAlarmAfter = 20; //alarm sounds earlier after first attempt
                         loginAndGetReady();
                         beginRegistration();
