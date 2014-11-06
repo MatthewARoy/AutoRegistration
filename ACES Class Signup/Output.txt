@@ -1,4 +1,0 @@
-mar59 and password of length 9
-7
-setup
-Set registration for: Thu Nov 06 07:00:00 EST 2014
