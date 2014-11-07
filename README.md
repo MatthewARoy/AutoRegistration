@@ -3,7 +3,7 @@ AutoRegistration
 
 An Automatic ACES registration program via headless browser
 
-For the jar file, download from here: https://drive.google.com/file/d/0B49KEI5qgNXVdjJlVi1tS2xKdzA/view?usp=sharing
+For the jar file, download from here: REMOVED
 
 Once upon a time, I didn't want to get up at 7am to register for classes. I wrote a program that signs up for classes through ACES automatically. My friends and I have been using it for the last few years, but I decided the time has come to share it with Duke as a whole.
 
