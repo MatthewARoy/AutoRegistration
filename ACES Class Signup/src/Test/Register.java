@@ -122,59 +122,7 @@ public class Register
         
         _timer.schedule(new AlarmTask2(this), regTime);
     }
-    
-    
-    
-    public void loadUserAndPass() {
         
-        String filename = "AutoRegisterNETIDAndPass.txt";
-        String path = filename;        
-        try {
-            FileInputStream is = new FileInputStream( path );
-            InputStreamReader isr = new InputStreamReader( is, "UTF-8" );
-            BufferedReader br = new BufferedReader( isr );
-            String line = br.readLine();
-            System.out.println("Reading File: ");
-            int n = 0;
-            while( line != null )
-            {
-                System.out.println(line);
-                if (n == 1) {
-                    netid = line;
-                }
-                else if (n == 2) {
-                    acesPass = line;
-                }
-                // process lines of text    
-                line = br.readLine();
-                n++;
-            }
-            br.close();
-            isr.close();
-            is.close();
-            FileOutputStream iso = new FileOutputStream(path, true);
-            PrintWriter writer = new PrintWriter(iso);
-            writer.println("\nPrepared to register: "+netid+ "\n");
-            writer.close();
-            iso.close();
-            System.out.println(netid);
-            System.out.println("Password of length" + acesPass.length());
-        }
-        catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        catch (UnsupportedEncodingException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
-    
     
     public void addGui(SignupInterface gui) {
         myGui = gui;
@@ -202,8 +150,7 @@ public class Register
         catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        }
-        
+        }        
     }
 
     /**
@@ -253,7 +200,7 @@ public class Register
             // Title=
             // URL=https://shib.oit.duke.edu/idp/profile/SAML2/Redirect/SSO
 
-            webClient.waitForBackgroundJavaScript(3000);
+            webClient.waitForBackgroundJavaScript(10000);
 
             System.out.println("Current page: Duke Student Info Systems");
 
@@ -275,8 +222,6 @@ public class Register
             myGui.addInfoText("Enroll cart: " + anchor2 + "\n");
             page = anchor2.click();
 
-            // System.out.println(page.asXml());
-
             System.out.println("Current page: Enrollment Book Bag");
             myGui.addInfoText("Current page: Enrollment Book Bag \n");
             
@@ -284,9 +229,8 @@ public class Register
             // Title=Enrollment Book Bag
             // URL=https://www.siss.duke.edu/psp/CSPRD01_1/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL
 
-            System.out.println("Waiting: " + webClient.waitForBackgroundJavaScript(3000));
-            // System.out.println(page.asXml());
-
+            System.out.println("Waiting: " + webClient.waitForBackgroundJavaScript(10000));
+            
             final List<FrameWindow> window = page.getFrames();
             final HtmlPage targetPage = (HtmlPage) window.get(0).getEnclosedPage();
             page = targetPage;
@@ -402,10 +346,11 @@ public class Register
                 if (n>soundAlarmAfter) {
                     System.out.println("I am sounding the alarm! I tried "+n+" times!");
                     myGui.addInfoText("I am sounding the alarm! I tried "+n+" times! \n");
-                    ifRegistrationFails();
+                    ifRegistrationFails(10);
                     Thread.sleep(1000);
                     if (n>soundAlarmAfter && n%10==0) {
-                        Thread.sleep(10000);
+                        Thread.sleep(1000000);
+                        //Wait 1000 seconds
                         myGui.addInfoText("Restarting entire process and logging into ACES again. \n");
                         soundAlarmAfter = 20; //alarm sounds earlier after first attempt
                         loginAndGetReady();
