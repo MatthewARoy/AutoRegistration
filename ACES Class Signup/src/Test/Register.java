@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import javax.sound.sampled.AudioInputStream;
@@ -59,6 +60,7 @@ public class Register
     
     //tries 25 times, then reloads aces and tries again
     public int soundAlarmAfter = 50;
+    public int maxIterations = 3;
     public boolean successful = false;
     public boolean registrationOpen = false;
     private HtmlPage page = null;
@@ -152,6 +154,23 @@ public class Register
             e.printStackTrace();
         }        
     }
+    
+    /*
+     * Turns off the HTMLUnit error message spam
+     * Can turn on for debugging purposes
+     */
+    public void removeErrorMessages() {        
+        java.util.logging.Logger.getLogger("com.gargoylesoftware").setLevel(Level.OFF); 
+        System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.NoOpLog");
+    }
+    
+    /*
+     * Logs messages in both the output file and on the GUI
+     */
+    public void logMessage(String output) {
+        System.out.println(output);
+        myGui.addInfoText(output + "\n");
+    }
 
     /**
      * This is the important stuff, logging into aces and moving to the bookbag page
@@ -165,12 +184,14 @@ public class Register
         webClient.getCookieManager().setCookiesEnabled(true);
         webClient.setAjaxController(new NicelyResynchronizingAjaxController());
 
+        removeErrorMessages();
+        
         try
         {
             page = webClient.getPage(url);
 
             myGui.addInfoText("Loading up aces and logging in! \n");
-            System.out.println("Current page: ACES/STORM Login");
+            logMessage("Current page: ACES/STORM Login");
 
             // Current page:
             // Title=ACES/STORM Login
@@ -257,28 +278,28 @@ public class Register
         {
             System.out.println("FailingHttpStatusCodeException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (MalformedURLException e1)
         {
             System.out.println("MalformedURLException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (IOException e1)
         {
             System.out.println("IOException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (Exception e)
         {
             System.out.println("General exception thrown:" + e.getMessage());
             e.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
     }
@@ -291,8 +312,7 @@ public class Register
      */    
     public void beginRegistration () {
         int n = 0;        
-        while (!readyToRegister) {
-            
+        while (!readyToRegister) {        
         }        
         boolean gotToSignup = false;
         startTime = System.currentTimeMillis();
@@ -307,13 +327,19 @@ public class Register
                     myGui.addInfoText("Current page while bookbagging: " + pageTitle2.asText() + " \n");
                 }
                 // testing if the registration window is open yet
+                
+                //This finds the enroll button on the ACES bookbag page. "Go to enroll page"
                 HtmlAnchor anchor3 =
                         (HtmlAnchor) page.getElementById("DERIVED_REGFRM1_LINK_ADD_ENRL");
                 page = anchor3.click();
 
-                System.out.println("Loading after click: " +
-                                   webClient.waitForBackgroundJavaScript(3000));
+                //Wait for the page to load for a minimum of 10 seconds,
+                //and won't go on until the page has fully loaded
+                
+                int delayTime = webClient.waitForBackgroundJavaScript(10000);
+                System.out.println("Loading after click: " + delayTime);
 
+                Thread.sleep(5000);
                 HtmlDivision pageTitle =
                         (HtmlDivision) page.getElementById("win1divDERIVED_REGFRM1_TITLE1");
                 // testing if the registration window is open yet
@@ -322,6 +348,8 @@ public class Register
                 HtmlAnchor submitbutton =
                         (HtmlAnchor) page.getElementById("DERIVED_REGFRM1_SSR_PB_SUBMIT");
                 
+                
+                //ACES loaded the confirm enrollment page
                 if (submitbutton != null)
                 {
                     gotToSignup = true;
@@ -348,9 +376,10 @@ public class Register
                     myGui.addInfoText("I am sounding the alarm! I tried "+n+" times! \n");
                     ifRegistrationFails(10);
                     Thread.sleep(1000);
-                    if (n>soundAlarmAfter && n%10==0) {
+                    if (n>soundAlarmAfter && n%10==0 && maxIterations > 0) {
+                        maxIterations--;
                         Thread.sleep(1000000);
-                        //Wait 1000 seconds
+                        //Wait 1000 seconds -> ~16 minutes
                         myGui.addInfoText("Restarting entire process and logging into ACES again. \n");
                         soundAlarmAfter = 20; //alarm sounds earlier after first attempt
                         loginAndGetReady();
@@ -392,28 +421,28 @@ public class Register
         {
             System.out.println("FailingHttpStatusCodeException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (MalformedURLException e1)
         {
             System.out.println("MalformedURLException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (IOException e1)
         {
             System.out.println("IOException thrown:" + e1.getMessage());
             e1.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
         catch (Exception e)
         {
             System.out.println("General exception thrown:" + e.getMessage());
             e.printStackTrace();
-            ifRegistrationFails();
+            ifRegistrationFails(50);
 
         }
 
